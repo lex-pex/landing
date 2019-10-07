@@ -1,0 +1,126 @@
+
+body {
+    background-color: #333 !important;
+}
+
+#app {
+    background-color: #333;
+}
+
+#pane_block_adm div {
+    float:left;
+    background: #444;
+    border-right:solid 2px silver;
+    padding:15px;
+    text-align:center;
+    width:75px;
+    min-height:75px;
+}
+
+#pane_block_adm {
+    z-index:99;
+    position:fixed;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -155px;
+    width:100%;
+    height:65px;
+    color:#ddd;
+}
+
+.cyphers{
+    border-radius: 3px;
+    background: yellow;
+    color: firebrick;
+    padding: 4px;
+}
+.label{
+    font-size: 12px;
+    border-radius: 3px;
+    background: pink;
+    color: #333;
+    padding: 4px;
+}
+
+.lsa-path{
+    font-size: 14px;
+}
+
+.lsa-path a {
+    background: #ddd;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.lsa-pages {
+    font-size: 14px;
+    margin: 12px 0 12px 0;
+}
+
+.lsa-pages a {
+    background:lightgreen;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.ls-calendar-card table {
+    font-size: 12px;
+    margin:0;
+    padding:0;
+}
+
+.ls-calendar-card {
+    text-align: center;
+    margin:12px 0 12px 0;
+    padding:0;
+    border-radius:5px;
+    background:white
+}
+
+.ls-calendar-month {
+    font-size: 25px;
+    padding:7px;
+    text-align:center;
+    color:white;
+    background:silver;
+    height:50px;
+}
+
+.lsa-card{
+    background-color: #f9f9f9;
+    border-radius: 7px;
+    font-size:14px;
+    color:#555;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+
+.lsa-card-header {
+    border-radius: 7px 7px 0 0;
+    background: #f1f1f1;
+    font-size: 22px;
+    padding:10px;
+    text-align: center;
+    text-transform:capitalize;
+    color:#333;
+}
+
+.lsa-card-body {
+    padding: 10px;
+}
+
+.lsa-card-footer {
+    border-radius: 0 0 7px 7px;
+    background: #f1f1f1;
+    font-size: 17px;
+    padding:10px;
+    text-align: center;
+    text-transform:capitalize;
+    color:#333;
+}
+
+
+
+
+
+
