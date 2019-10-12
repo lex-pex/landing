@@ -15,3 +15,7 @@ function myMap()
     });
     marker.setMap(map);
 }
+
+var imported = document.createElement('script');
+imported.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDhfcxkm3QqFw74EXiTJPFNbhOGyc-nR64&callback=myMap';
+document.head.appendChild(imported);

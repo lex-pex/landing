@@ -18,8 +18,8 @@
     <meta name="twitter:image" content="/img/favicon.jpg" />
     <title>Lexis Studio | Студия Сайтов</title>
     <link rel="icon" href="/img/favicon.png">
-    <link href="/css/ls.css" rel="stylesheet">
     <link href="/css/responsive.css" rel="stylesheet">
+    <link href="/css/ls.css" rel="stylesheet">
 </head>
 <body>
 @auth
@@ -655,13 +655,13 @@
     </div>
 </section><!-- Contact Layer End -->
 <!-- Map Layer -->
-<div class="container-fluid">
+<div class="container-fluid bg-white">
     <div class="row">
         <div class="col-12 p-0">
             <div id="googleMap" class="gmap"></div>
         </div>
     </div>
-</div><!-- Map Layer End -->
+</div> <!-- Map Layer End -->
 <footer class="footer-social-icon text-center padding_70 clearfix bg-white">
     <div class="footer-text">
         <h2>Ls<span class="blink">_</span></h2>
@@ -687,7 +687,6 @@
 <script src="/js/slick.min.js"></script>
 <script src="/js/footer-reveal.min.js"></script>
 <script src="/js/map.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhfcxkm3QqFw74EXiTJPFNbhOGyc-nR64&callback=myMap"></script>
 <script src="/js/ls.js"></script>
 </body>
 </html>
