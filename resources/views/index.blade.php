@@ -588,9 +588,6 @@
                 <div class="address-text">
                     <p><span>адрес:</span>Киев, ул.Хмельницкая, 10</p>
                 </div>
-                <div class="phone-text">
-                    <p><span>телефон:</span> +38 (095) 105 57 87</p>
-                </div>
                 <div class="email-text">
                     <p><span>email:</span> lexis.studio.com@gmail.com</p>
                 </div>
