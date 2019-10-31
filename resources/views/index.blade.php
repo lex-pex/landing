@@ -611,26 +611,6 @@
                                 </div>
                             </div>
                             @endif
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="text" name="name" id="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" value="{{ old('name') }}" placeholder="Ваше Имя" required {{ session('messageSent') ? 'autofocus' : ''}} {{ $errors->has('name') ? 'autofocus' : '' }}>
-                                    @if ($errors->has('name'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="email" name="email" id="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" value="{{ old('email') }}" placeholder="Ваша Почта E-mail" required {{ $errors->has('email') ? 'autofocus' : '' }}>
-                                    @if ($errors->has('email'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                    @endif
-                                </div>
-                            </div>
                             <div class="col-12">
                                 <div class="form-group">
                                     <textarea name="text" id="message" class="form-control{{ $errors->has('text') ? ' is-invalid' : '' }}" cols="30" rows="4" placeholder="Ваше Сообщение" required {{ $errors->has('text') ? 'autofocus' : '' }}>{{ old('text') }}</textarea>
@@ -638,6 +618,26 @@
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('text') }}</strong>
                                     </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="name" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" value="{{ old('name') }}" placeholder="Ваше Имя" required {{ session('messageSent') ? 'autofocus' : ''}} {{ $errors->has('name') ? 'autofocus' : '' }}>
+                                    @if ($errors->has('name'))
+                                        <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $errors->first('name') }}</strong>
+                                </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" value="{{ old('email') }}" placeholder="Ваша Почта E-mail" required {{ $errors->has('email') ? 'autofocus' : '' }}>
+                                    @if ($errors->has('email'))
+                                        <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $errors->first('email') }}</strong>
+                                </span>
                                     @endif
                                 </div>
                             </div>
