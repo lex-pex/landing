@@ -592,7 +592,7 @@
                     <p><span>email:</span> lexis.studio.com@gmail.com</p>
                 </div>
             </div>
-            <div class="col-md-6"><!-- Form Start-->
+            <div class="col-md-6"><!-- Form Start -->
                 <div class="contact-form">
                     <form method="POST" action="{{ route('feedback') }}">
                         @csrf
@@ -642,7 +642,20 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn submit-btn">Отправить</button>
+                                <label for="captcha" class="text-muted">Введите сумму:</label>
+                                <div class="form-group row">
+                                    <div class="col-6 text-left" style="max-width:30%">
+                                        <input id="captcha" type="text" class="form-control{{ $errors->has('captcha') ? ' is-invalid' : '' }}" name="captcha" placeholder="3 + 2 = ..." required>
+                                        @if ($errors->has('captcha'))
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $errors->first('captcha') }}</strong>
+                                            </span>
+                                        @endif
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <button type="submit" class="btn submit-btn">Отправить</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </form>

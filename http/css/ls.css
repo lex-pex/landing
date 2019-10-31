@@ -887,6 +887,12 @@ div .form-sent-info{
     border-radius: 25px 25px 25px 0;
 }
 
+#captcha {
+    font-size: 18px;
+    padding: 10px 10px;
+    border-radius: 25px 25px 25px 0;
+}
+
 #email {
     font-size: 18px;
     padding: 15px 15px;
