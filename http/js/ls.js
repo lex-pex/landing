@@ -2,7 +2,6 @@
 /**
  * Smooth Anchor Scroll
  */
-
 $(document).ready(function(){
     $(".scroll_anchor").on("click","a", function (event) {
         event.preventDefault();
@@ -82,7 +81,7 @@ function paneToggle() {
             speed: 500,
             asNavFor: '.slider-for',
             dots: true,
-            centerMode: true,
+            // centerMode: true,
             focusOnSelect: true,
             slide: 'div',
             autoplay: true,
@@ -180,3 +179,5 @@ function paneToggle() {
         });
     });
 })(jQuery);
+
+

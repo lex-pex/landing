@@ -7,6 +7,14 @@ use App\Models\DailyVisits;
 
 class AdminController extends Controller
 {
+
+    public function visits() {
+        $weeksMap = $this->getWeeksMap();
+        return view('admin.visits', [
+            'weeksMap' => $weeksMap
+        ]);
+    }
+
     public function panel(){
         return view('admin.admin');
     }
@@ -22,10 +30,29 @@ class AdminController extends Controller
     public function calendar() {
         $weeksMap = $this->getWeeksMap();
         return view('admin.calendar', [
-            'weeksMap' => $weeksMap
+            'weeksMap' => array_reverse($weeksMap, true)
         ]);
     }
 
+    /**
+     * Spread the Daily Visits table into the array of Months
+     */
+    public function getCalendar() {
+        $calendar = array();
+        $dailyVisits = DailyVisits::all()->sortBy('date');
+        foreach($dailyVisits as $visits) {
+            $str = $visits->date;
+            $time = strtotime($str);
+            $month = date('M', $time) . ' ' . date('Y', $time);
+            $day = date('j', $time);
+            $calendar[$month][$day] = $visits;
+        }
+        return $calendar;
+    }
+
+    /**
+     * Divide the Months Array into the Weeks Array
+     */
     private function getWeeksMap() {
         $cal = $this->getCalendar();
         $weeks = [];
@@ -46,19 +73,6 @@ class AdminController extends Controller
             }
         }
         return $weeks;
-    }
-
-    public function getCalendar() {
-        $calendar = array();
-        $dailyVisits = DailyVisits::all()->sortBy('date');
-        foreach($dailyVisits as $visits) {
-            $str = $visits->date;
-            $time = strtotime($str);
-            $month = date('M', $time);
-            $day = date('j', $time);
-            $calendar[$month][$day] = $visits;
-        }
-        return $calendar;
     }
 
 }

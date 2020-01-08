@@ -23,6 +23,7 @@ Route::group(['prefix' => '/', 'middleware' => ['counter', 'web']], function () 
 
         Route::get('/', 'AdminController@panel')->name('panel');
         Route::get('/calendar', 'AdminController@calendar');
+        Route::get('/visits', 'AdminController@visits');
         Route::get('/feedback', 'AdminController@feedback');
         Route::get('/feedback/read/{id}', 'MessageController@readFeedback');
         Route::post('/feedback/del/{item}', 'MessageController@messageDel')->name('messageDel');

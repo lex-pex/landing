@@ -1,0 +1,76 @@
+
+/* Calendar */
+
+.vf-calendar table{
+    width:99%;
+    max-width:99%;
+    text-align:center;
+    background: white;
+}
+
+.vf-calendar{
+    width:100%;
+    min-height:550px;
+    background:none;
+    font-size: 13px;
+}
+
+.vf-calendar .month {
+    font-size: 20px;
+    padding:8px;
+    text-align:center;
+    color:white;
+    background:silver;
+    height:45px;
+}
+
+.vf-calendar .week {
+    background:white;
+    height:35px;
+}
+
+.vf-calendar th:first-child {
+    color:red;
+}
+
+.vf-calendar th {
+    padding:0;
+}
+
+.vf-calendar td {
+    padding:3px;
+    border-left:solid 1px #ddd;
+    border-bottom:solid 1px #ddd;
+}
+
+.vf-calendar .off {
+    background: #ddd;
+}
+
+.past-month{
+    background:#eee;
+}
+
+.visits{
+    color:darkred;
+    background:yellow;
+    padding:3px;
+    font-size: 0.9em;
+}
+
+.cyphers{
+    border-radius: 3px;
+    background: yellow;
+    color: firebrick;
+    padding: 4px;
+}
+
+
+
+
+
+
+
+
+
+

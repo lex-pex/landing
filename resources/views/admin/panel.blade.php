@@ -27,7 +27,8 @@
             <div class="lsa-pages">
                 <a style="background: lightpink" href="/admin">Админка</a>
                 <a href="/admin/feedback">Сообщения</a>
-                <a href="/admin/calendar">Просмотры</a>
+                <a href="/admin/visits">Визиты</a>
+                <a href="/admin/calendar">Календарь</a>
             </div>
           @yield('pane')
         </div>
